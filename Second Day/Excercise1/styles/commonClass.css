@@ -1,0 +1,51 @@
+#container{
+    margin: auto;
+    width: 50%;
+}
+
+body{
+   background-color: #e3e3e3;
+}
+
+#quotes article{
+    border:2px solid white;
+    margin:10px 0 10px 0;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding-left:none; 
+}
+
+li{
+    font-weight: bold;
+}
+
+li::before {
+    content: "#";
+    color: red;
+    font: bold;
+    padding-right: 10px;
+}
+
+blockquote strong {
+    position: relative;   
+}
+
+blockquote strong:before {
+  position: absolute;
+  content: open-quote;
+  font-size: 4em;
+  margin-left: -0.6em;
+  margin-top: -0.4em;
+}
+blockquote strong:after {
+  position: absolute;
+  content: close-quote;
+  font-size: 4em;
+  bottom: 0;
+  right: 0;
+  margin-right: -0.6em;
+  margin-bottom: -0.8em;
+}

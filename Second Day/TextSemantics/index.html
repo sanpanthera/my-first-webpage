@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        h1 {
+            /* margin: auto;
+          width: 50%; */
+            text-align: center;
+        }
+
+        body>section {
+            border: 1px solid black;
+            margin: 10px;
+            padding: 5px;
+        }
+
+        em {
+            color: red;
+        }
+
+        small {
+            background-color: burlywood;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Text level Semantics</h1>
+
+    <section>
+        <dl>
+            <dt>
+                <h2>Anchor tag</h2>
+            </dt>
+            <dd>As long as there is no interactive content within (e.g., buttons or other links). This example shows how this
+                can be used to make an entire advertising block into a link:</dd>
+        </dl>
+        <article>
+            <aside>
+                <h3>Advertising</h3>
+                <a href="https://ad.example.com/?adid=1929&amp;pubid=1422">
+                    <section>
+                        <h3>Mellblomatic 9000!</h3>
+                        <p>Turn all your widgets into mellbloms!</p>
+                        <p>Only $9.99 plus shipping and handling.</p>
+                    </section>
+                </a>
+                <a href="https://ad.example.com/?adid=375&amp;pubid=1422">
+                    <section>
+                        <h3>The Mellblom Browser</h3>
+                        <p>Web browsing at the speed of light.</p>
+                        <p>No other browser goes faster!</p>
+                    </section>
+                </a>
+            </aside>
+        </article>
+    </section>
+
+    <section>
+        <dl>
+            <dt>
+                <h2>em tag</h2>
+            </dt>
+            <dd>The em element represents stress emphasis of its contents.</dd>
+        </dl>
+        <article>
+            <p>Cats are
+                <em>cute</em> animals.</p>
+        </article>
+    </section>
+
+    <section>
+        <dl>
+            <dt>
+                <h2>strong tag</h2>
+            </dt>
+            <dd>The strong element represents strong importance, seriousness, or urgency for its contents.</dd>
+        </dl>
+        <article>
+            <p>
+                <strong>Warning.</strong> This dungeon is dangerous.
+                <strong>Avoid the ducks.</strong> Take any gold you find.
+                <strong>
+                    <strong>Do not take any of the diamonds</strong>, they are explosive and
+                    <strong>will destroy anything within ten meters.</strong>
+                </strong> You have been warned.
+            </p>
+        </article>
+    </section>
+
+    <section>
+        <dl>
+            <dt>
+                <h2>small tag</h2>
+            </dt>
+            <dd>The small element represents side comments such as small print.Small print typically features disclaimers, caveats,
+                legal restrictions, or copyrights. Small print is also sometimes used for attribution, or for satisfying
+                licensing requirements.</dd>
+        </dl>
+        <article>
+            <p>Example Corp today announced record profits for the second quarter
+                <small>(Full Disclosure: Foo News is a subsidiary of Example Corp)</small>, leading to speculation about a third
+                quarter merger with Demo Group.</p>
+        </article>
+    </section>
+
+    <section>
+        <dl>
+            <dt>
+                <h2>s tag</h2>
+            </dt>
+            <dd></dd>
+        </dl>
+        <article>
+            <p>Buy our Iced Tea and Lemonade!</p>
+            <p>
+                <s>Recommended retail price: $3.99 per bottle</s>
+            </p>
+            <p>
+                <strong>Now selling for just $2.99 a bottle!</strong>
+            </p>
+        </article>
+    </section>
+
+    <section>
+        <dl>
+            <dt>
+                <h2>cite tag</h2>
+            </dt>
+            <dd>The cite element represents a reference to a creative work. It must include the title of the work or the name
+                of the author (person, people or organization) or an URL reference, or a reference in abbreviated form as
+                per the conventions used for the addition of citation metadata.
+            </dd>
+        </dl>
+        <article>
+            <blockquote class="twitter-tweet">
+                <p>♥ Bukowski in
+                    <a href="https://twitter.com/search?q=%23HTML5&src=hash">#HTML5</a> spec examples
+                    <a href="https://t.co/0FIEiYN1pC">https://t.co/0FIEiYN1pC</a>
+                </p>
+                <cite>— karl dubost (@karlpro)
+                    <a href="https://twitter.com/karlpro/statuses/370905307293442048">August 23, 2013</a>
+                </cite>
+            </blockquote>
+
+            <p>In the words of
+                <cite>Charles Bukowski</cite> -
+                <q>An intellectual says a simple thing in a hard way. An artist says a hard thing in a simple way.</q>
+            </p>
+            <p>Who is your favorite doctor (in
+                <cite>Doctor Who</cite>)?</p>
+            <p>
+                <cite>Universal Declaration of Human Rights</cite>, United Nations, December 1948. Adopted by General Assembly
+                resolution 217 A (III).</p>
+        </article>
+    </section>
+
+    <section>
+        <dl>
+            <dt>
+                <h2>q tag</h2>
+            </dt>
+            <dd>The q element represents some phrasing content quoted from another source. Quotation punctuation (such as quotation
+                marks) that is quoting the contents of the element must not appear immediately before, after, or inside q
+                elements; they will be inserted into the rendering by the user agent.</dd>
+        </dl>
+        <article>
+            <p>The man said
+                <q>Things that are impossible just take longer
+                </q>. I disagreed with him.</p>
+        </article>
+    </section>
+
+    <section>
+        <dl>
+            <dt>
+                <h2>dfn tag</h2>
+            </dt>
+            <dd>The dfn element represents the defining instance of a term. The term-description group , p, li or section element
+                that is the nearest ancestor of the dfn element must also contain the definition(s) for the term given by
+                the dfn element.
+            </dd>
+        </dl>
+        <article>
+            <p>The
+                <dfn id=gdo>
+                    <abbr title="Garage Door Opener">GDO</abbr>
+                </dfn>
+                is a device that allows off-world teams to open the iris.</p>
+            <!-- ... later in the document: -->
+            <p>Teal’c activated his
+                <a href=#gdo>
+                    <abbr title="Garage Door Opener">GDO</abbr>
+                </a>
+                and so Hammond ordered the iris to be opened.</p>
+        </article>
+    </section>
+
+    <section>
+        <dl>
+            <dt>
+                <h2>abbr tag</h2>
+            </dt>
+            <dd>The abbr element represents an abbreviation or acronym, optionally with its expansion. The title attribute may
+                be used to provide an expansion of the abbreviation. The attribute, if specified, must contain an expansion
+                of the abbreviation, and nothing else.</dd>
+        </dl>
+        <article>
+            <p>The
+                <abbr title="Web Hypertext Application Technology Working Group">WHATWG</abbr>
+                started working on HTML in 2004.</p>
+        </article>
+    </section>
+    <section>
+        <dl>
+            <dt>
+                <h2></h2>
+            </dt>
+            <dd></dd>
+        </dl>
+        <article>
+        </article>
+    </section>
+    <section>
+        <dl>
+            <dt>
+                <h2></h2>
+            </dt>
+            <dd></dd>
+        </dl>
+        <article>
+        </article>
+    </section>
+    <section>
+        <dl>
+            <dt>
+                <h2></h2>
+            </dt>
+            <dd></dd>
+        </dl>
+        <article>
+        </article>
+    </section>
+    <section>
+        <dl>
+            <dt>
+                <h2></h2>
+            </dt>
+            <dd></dd>
+        </dl>
+        <article>
+        </article>
+    </section>
+    <section>
+        <dl>
+            <dt>
+                <h2></h2>
+            </dt>
+            <dd></dd>
+        </dl>
+        <article>
+        </article>
+    </section>
+    <section>
+        <dl>
+            <dt>
+                <h2></h2>
+            </dt>
+            <dd></dd>
+        </dl>
+        <article>
+        </article>
+    </section>
+    <section>
+        <dl>
+            <dt>
+                <h2></h2>
+            </dt>
+            <dd></dd>
+        </dl>
+        <article>
+        </article>
+    </section>
+    <section>
+        <dl>
+            <dt>
+                <h2></h2>
+            </dt>
+            <dd></dd>
+        </dl>
+        <article>
+        </article>
+    </section>
+    <section>
+        <dl>
+            <dt>
+                <h2></h2>
+            </dt>
+            <dd></dd>
+        </dl>
+        <article>
+        </article>
+    </section>
+    <section>
+        <dl>
+            <dt>
+                <h2></h2>
+            </dt>
+            <dd></dd>
+        </dl>
+        <article>
+        </article>
+    </section>
+    <section>
+        <dl>
+            <dt>
+                <h2></h2>
+            </dt>
+            <dd></dd>
+        </dl>
+        <article>
+        </article>
+    </section>
+    <section>
+        <dl>
+            <dt>
+                <h2></h2>
+            </dt>
+            <dd></dd>
+        </dl>
+        <article>
+        </article>
+    </section>
+    <section>
+        <dl>
+            <dt>
+                <h2></h2>
+            </dt>
+            <dd></dd>
+        </dl>
+        <article>
+        </article>
+    </section>
+    <section>
+        <dl>
+            <dt>
+                <h2></h2>
+            </dt>
+            <dd></dd>
+        </dl>
+        <article>
+        </article>
+    </section>
+
+</body>
+
+</html>
