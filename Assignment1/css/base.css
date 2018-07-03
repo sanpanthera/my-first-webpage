@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    background: #fafafa url('../img/background.png');
+    font-family: 'Roboto Slab', serif, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    overflow-y: auto;
+}
+
+header {
+    height: 12vh;
+    background-color: rgb(165, 177, 189);
+    position: fixed;
+    left: 5%;
+    z-index: 99999;
+}
+
+nav {
+    float: right;
+    margin: 15px;
+}
+
+main {
+    position: relative;
+    top: 12vh;
+    height: auto;
+    min-height: 88vh;
+}
+
+main, header {
+    margin: auto;
+    width: 90%;
+}
+
+main {
+    margin-bottom: 4vh;
+}
+
+footer {
+    position: fixed;
+    text-align: center;
+    height: 4vh;
+    bottom: 0;
+    background-color: black;
+    color: azure;
+    width: 100%;
+    padding-top: 5px;
+}
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+article {
+    background-color: rgb(67, 76, 104);
+    opacity: 0.7;
+    flex: 1;
+    margin: 0.5em;
+}
+
+article:first-child {
+    margin-left: 0;
+}
+
+article:last-child {
+    margin-right: 0;
+}
+
+blockquote::after {
+    content: '\201D';
+    font-size: 2.2em;
+    font-style: italic;
+}
+
+blockquote::before {
+    content: '\201C';
+    font-size: 2.2em;
+    font-style: italic;
+}
+
+blockquote {
+    margin: 0;
+}
+
+/*Media Queries*/
+
+@media (min-width:50px) and (max-width:450px) {
+    article {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    nav {
+        margin: 0.3em;
+    }
+}
+
+@media (min-width: 451px) and (max-width:900px) {
+    nav {
+        margin: 6% 1%;
+        float: right;
+    }
+}
+
+@media (min-width:901px) {
+    main {
+        top: 9vh;
+    }
+    header {
+        height: 9vh;
+    }
+}

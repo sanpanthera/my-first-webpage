@@ -1,0 +1,131 @@
+.m-hero {
+    background-color: #87adbe;
+    opacity: 0.7;
+    /* background-image: url("../img/heroBackgroud.jpg");    */
+    background-repeat: no-repeat;
+    width: 100%;
+    float: left;
+    position: relative;
+    padding-bottom: 20px;
+    margin-top: 10px;
+    color: rgb(8, 7, 7);
+    font-weight: bold;
+    text-align: center;
+}
+
+.m-wrapper {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.m-product {
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+.m-hero-header, .m-hero-details {
+    text-align: left;
+    line-height: 1.5em;
+}
+
+.m-hero-header {
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-weight: lighter;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.m-num-votes {
+    display: block;
+    text-align: center;
+    background-color: #486985;
+    color: #000;
+    position: absolute;
+    top: 0;
+    right: 5%;
+    margin: 0;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    font-size: .5em;
+    letter-spacing: .2em;
+}
+
+.m-num-votes strong {
+    font-size: 2.2em;
+    line-height: 1em;
+    letter-spacing: normal;
+    display: block;
+}
+
+.m-vote {
+    display: block;
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: .6em 0 .6em 8%;
+    color: #000;
+    font-size: .8em;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #486985;
+}
+
+.m-card {
+    background-color: #273f53;
+    min-width: 10vw;
+    min-height: 10vh;
+    flex: 1;
+    margin: 0.5em;
+    padding: 1.5em;
+    color: aqua;
+}
+
+
+.m-article-card {
+    min-width: 28vw;
+    background-color: white;
+    opacity: 0.9;
+    padding: 0.5em;
+}
+
+/*Media Queries*/
+
+@media (min-width:50px) and (max-width: 450px) {
+    .m-num-votes {
+        font-size: 0.8em;
+    }
+}
+
+@media (min-width: 451px) {
+    .m-product {
+        margin-top: 40px;
+        max-width: 50%;
+        float: left;
+    }
+    .m-hero {
+        text-align: left;
+    }
+    .m-item-info {
+        margin-left: 53%;
+        width: 45%;
+        padding-top: 80px;
+    }
+    .m-num-votes {
+        left: 53%;
+        right: auto;
+    }
+    .m-vote {
+        margin-top: 20px;
+        text-align: center;
+    }
+}
+
+
+@media (min-width:901px) {
+    .m-article-card {
+        height: 30vh;
+    }
+}
