@@ -1,0 +1,19 @@
+@import 'custom-variables';
+
+footer {
+    a {
+        color: $dark;
+    }
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    height: 100vh;
+}
+
+input::-webkit-calendar-picker-indicator {
+    display: none;
+  }
+
